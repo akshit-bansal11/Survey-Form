@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons-outlined {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #ffbf00;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  display: table;
+  margin: auto;
+}
+
+body {
+  background-color: #082032;
+  padding-top: 20px;
+  align-self: center;
+  max-width: max-content;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+header {
+  display: grid;
+  background-color: #2c394b;
+  height: 100px;
+  border-radius: 15px;
+}
+
+header p {
+  display: flex;
+  place-self: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #c64329;
+  font-weight: lighter;
+  font-size: 55px;
+}
+
+.emptyspan {
+  display: block;
+  height: 50px;
+}
+
+main {
+  background-color: #2c394b;
+  border-radius: 15px;
+  padding: 50px;
+  max-width: fit-content;
+}
+
+form {
+  display: grid;
+}
+
+.Form-Head {
+  display: inline-block;
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffbf00;
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+.Form-Head::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #ffbf00;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.Form-Head:hover:after {
+  transform: scaleX(1);
+}
+
+.inputt1p1 {
+  justify-items: center;
+  background-color: #334756;
+  width: 440px;
+  align-items: center;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: white;
+  border-radius: 5px;
+  color: white;
+}
+
+.Email {
+  padding: 15px;
+}
+
+.Last-Name {
+  padding: 15px;
+}
+
+.inputt1p2 {
+  justify-items: center;
+  background-color: #334756;
+  width: 289px;
+  align-items: center;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: white;
+  border-radius: 5px;
+  color: white;
+}
+
+.State {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.inputt1p3 {
+  background-color: #334756;
+  padding: 8px 20px;
+  width: 200px;
+  box-sizing: border-box;
+  border: white;
+  border-radius: 5px;
+  color: white;
+}
+
+.inputtype1 {
+  justify-items: center;
+  background-color: #334756;
+  width: 900px;
+  align-items: center;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: white;
+  border-radius: 5px;
+  color: white;
+}
+
+.Help-Text {
+  color: white;
+  font-size: small;
+  font-weight: lighter;
+}
+
+.country-select {
+  text-emphasis-color: white;
+  justify-items: center;
+  background-color: #334756;
+  width: 200px;
+  align-items: center;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: white;
+  color: white;
+}
+.country-select:hover {
+  background-color: #415869;
+}
+
+option {
+  color: white;
+}
+
+.inputt1p1:hover,
+.inputt1p2:hover,
+.inputt1p3:hover,
+.inputtype1:hover {
+  background-color: #415869;
+}
+
+.inputtype2 {
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+label {
+  color: lightgray;
+  font-size: 15px;
+  font-weight: lighter;
+  padding-right: 50px;
+}
+
+.gender-input label {
+  padding-bottom: 20px;
+}
+
+h5 {
+  color: white;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.gender {
+  padding-right: 15px;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 400px;
+  display: flex;
+}
+
+button {
+  position: relative;
+  font-size: 30px;
+  overflow: hidden;
+  padding: 10px;
+  color: #ffffff;
+  width: 250px;
+  background-color: #334756;
+  border-style: initial;
+  border-color: #334756;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+button::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #ff2a00;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+button:hover:after {
+  transform: scaleX(1);
+}
